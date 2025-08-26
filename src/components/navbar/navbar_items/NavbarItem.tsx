@@ -1,16 +1,20 @@
 import type { ReactNode } from "react";
-import React from "react";
+import './NavbarItem.css'
 
 interface NavbarItemProps {
     text?: string;
     href: string;
     children?: ReactNode;
+    underline?: boolean;
+    backgroundEffect?: boolean;
 }
 
-function NavbarItem({ text, href, children }: NavbarItemProps) {
+function NavbarItem({ text, href, children, underline, backgroundEffect }: NavbarItemProps) {
     return (
-        <a href={href} className="navbarItem">
-            {text}
+        <a href={href} className={`navbarItem ${underline ? 'navbarItem--underline' : ''} ${backgroundEffect ? 'backgroundEffect' : ''}`}>
+            {text && (
+                <h3 className="navbarText">{text}</h3>
+            )}
             {children}
         </a>
     )

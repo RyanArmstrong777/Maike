@@ -3,10 +3,11 @@
     --card: #eee;
     --border: #ddd;
     --text: #212121;
+    --text-light: #636363;
     --accent: #00c3ff;
 
-    --fontsize-sm: 0.75rem;
-    --fontsize-md: 1rem;
+    --fontsize-sm: 0.8rem;
+    --fontsize-md: 1.15rem;
     --fontsize-lg: 1.4rem;
     --fontsize-xl: 2rem;
 
@@ -21,9 +22,11 @@
     --spacing-xl: 32px;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, a {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    color: var(--text);
+    align-items: center;
 }
 
 h4 {
@@ -49,4 +52,17 @@ h1 {
 body, html {
     margin: 0;
     padding: 0;
+    background-color: var(--background);
+}
+
+a, div, button {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.icon {
+    color: var(--text-light);
+    width: var(--fontsize-lg);
+    height: var(--fontsize-lg);
 }

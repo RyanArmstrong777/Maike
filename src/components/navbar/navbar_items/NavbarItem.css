@@ -1,3 +1,45 @@
-.navbarItem {
-    
+.navbarItem { 
+    position: relative;
+    background-color: var(--background);
+    border-radius: var(--spacing-sm);
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarItem--underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: transparent;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.navbarItem--underline:hover::after {
+  width: 100%;
+  background-color: var(--text);
+}
+
+.navbarText {
+    color: var(--text-light)
+}
+
+.navbarItem:hover .navbarText,
+.navbarItem:hover .icon {
+    color: var(--text);
+}
+
+.navbarActiveTab {
+    color: var(--text);
+}
+
+.navbarItem.backgroundEffect:hover {
+    background-color: var(--card);
+}
+
+.backgroundEffect {
+    padding: var(--spacing-sm);
+    aspect-ratio: 1;
+    margin-left: auto;
 }
