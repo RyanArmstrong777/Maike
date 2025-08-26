@@ -1,0 +1,52 @@
+:root {
+    --background: #fff;
+    --card: #eee;
+    --border: #ddd;
+    --text: #212121;
+    --accent: #00c3ff;
+
+    --fontsize-sm: 0.75rem;
+    --fontsize-md: 1rem;
+    --fontsize-lg: 1.4rem;
+    --fontsize-xl: 2rem;
+
+    --fontweight-light: 200;
+    --fontweight-reg: 400;
+    --fontweight-bold: 600;
+
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h4 {
+    font-size: var(--fontsize-sm);
+    font-weight: var(--fontweight-reg);
+}
+
+h3 {
+    font-size: var(--fontsize-md);
+    font-weight: var(--fontweight-reg);
+}
+
+h2 {
+    font-size: var(--fontsize-lg);
+    font-weight: var(--fontweight-bold);
+}
+
+h1 {
+    font-size: var(--fontsize-xl);
+    font-weight: var(--fontweight-bold);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
