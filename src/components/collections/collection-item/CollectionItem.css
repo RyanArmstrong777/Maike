@@ -1,0 +1,16 @@
+.collection-item-container {
+    padding: var(--spacing-sm);
+    gap: var(--spacing-sm);
+    width: 32vw;
+    max-width: 175px;
+    border-radius: var(--spacing-md);
+    cursor: pointer;
+}
+
+.collection-item-container:hover {
+    background-color: var(--card);
+}
+
+.collection-metadata-container {
+    gap: var(--spacing-sm)
+}

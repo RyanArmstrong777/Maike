@@ -1,0 +1,18 @@
+.option-container {
+    --alpha: .3;
+    padding: var(--spacing-xl);
+    gap: var(--spacing-lg);
+    width: 100%;
+    max-width: 350px;
+    border-radius: var(--spacing-md);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.option-container:hover {
+    --alpha: 0.5;
+}
+
+.header-container {
+    gap: var(--spacing-xs);
+}

@@ -1,0 +1,40 @@
+.sidebar-container {
+    width: fit-content;
+    height: 100%;
+    padding: var(--spacing-sm);
+}
+
+.sidebar-item {
+    flex-direction: row;
+    gap: var(--spacing-md);
+    align-items: center;
+    padding: var(--spacing-sm);
+    border-radius: var(--spacing-xs);
+    width: auto;
+}
+
+.sidebar-item:hover {
+    background-color: var(--card);
+}
+
+.sidebar-item > svg,
+.sidebar-item > h4 {
+    color: var(--text-light);
+}
+
+.sidebar-item:hover svg,
+.sidebar-item:hover > h4 {
+    color: var(--text);
+}
+
+@media(max-width: 1010px) {
+    .sidebar-text {
+        display: none
+    }
+}
+
+@media(max-width: 950px) {
+    .sidebar-container {
+        display: none
+    }
+}

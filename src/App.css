@@ -1,68 +1,117 @@
 :root {
     --background: #fff;
-    --card: #eee;
-    --border: #ddd;
-    --text: #212121;
-    --text-light: #636363;
-    --accent: #00c3ff;
+    --card: #f8f8f8;
+    --border: #eceaea;
+    --text: #222;
+    --text-light: #777;
+    --accent: #efd;
 
-    --fontsize-sm: 0.8rem;
-    --fontsize-md: 1.15rem;
-    --fontsize-lg: 1.4rem;
-    --fontsize-xl: 2rem;
+    --fontsize-xxs: 0.9rem;
+    --fontsize-xs: 1.05rem;
+    --fontsize-sm: 1.2rem;
+    --fontsize-md: 1.45rem;
+    --fontsize-lg: 1.8rem;
+    --fontsize-xl: 2.3rem;
 
-    --fontweight-light: 200;
-    --fontweight-reg: 400;
-    --fontweight-bold: 600;
-
-    --spacing-xs: 4px;
-    --spacing-sm: 8px;
+    --spacing-xs: 6px;
+    --spacing-sm: 12px;
     --spacing-md: 16px;
     --spacing-lg: 24px;
     --spacing-xl: 32px;
+}
+
+body, html {
+    overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     color: var(--text);
-    align-items: center;
+}
+
+h6 {
+    font-size: var(--fontsize-xxs);
+    font-weight: normal;
+}
+
+h5 {
+    font-size: var(--fontsize-xs);
+    font-weight: normal;
 }
 
 h4 {
     font-size: var(--fontsize-sm);
-    font-weight: var(--fontweight-reg);
+    font-weight: normal;
 }
 
 h3 {
     font-size: var(--fontsize-md);
-    font-weight: var(--fontweight-reg);
+    font-weight: normal;
+    letter-spacing: -.5px;
 }
 
 h2 {
     font-size: var(--fontsize-lg);
-    font-weight: var(--fontweight-bold);
+    font-weight: bold;
+    letter-spacing: -2px;
 }
 
 h1 {
     font-size: var(--fontsize-xl);
-    font-weight: var(--fontweight-bold);
+    font-weight: bold;
+    letter-spacing: -2.2px;
 }
 
 body, html {
     margin: 0;
     padding: 0;
     background-color: var(--background);
+    max-width: 100vw;
+    max-height: 100vh;
 }
 
 a, div, button {
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .icon {
     color: var(--text-light);
     width: var(--fontsize-lg);
     height: var(--fontsize-lg);
+}
+
+a, button {
+    cursor: pointer;
+    background-color: var(--background);
+    border: none;
+}
+
+.centered {
+    justify-content: center;
+    align-items: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+* {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container {
+    flex: 1;
+    padding: var(--spacing-xl);
+}
+
+.app-body {
+    flex: 1;
+    overflow-y: scroll;
+    min-height: 0;
 }

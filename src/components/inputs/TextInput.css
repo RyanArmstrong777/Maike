@@ -1,0 +1,14 @@
+.text-input {
+    position: relative;
+    font-size: 1.05rem;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--spacing-xs);
+    border: 1px solid var(--border);
+    flex-direction: row;
+    gap: var(--spacing-md);
+}
+
+.text-input:focus {
+    outline: none;
+    border: 1px solid var(--border);
+}

@@ -1,0 +1,14 @@
+.input-option {
+    position: absolute;
+    right: 0;
+    width: fit-content;
+    height: calc(100% - 10px);
+    border: none;
+    background-color: var(--background);
+    margin: 5px;
+    border-radius: var(--spacing-xs);
+}
+
+.input-option:hover {
+    background-color: var(--card);
+}

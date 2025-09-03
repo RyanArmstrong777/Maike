@@ -1,0 +1,41 @@
+.call-to-action-container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--spacing-sm);
+    overflow: hidden;
+    transition: 0.5s ease;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.call-to-action-text {
+    color: var(--background);
+    transition: 0.5s ease;
+    z-index: 1;
+}
+
+.call-to-action-container.refillEffect .call-to-action-text {
+    color: var(--text)
+}
+
+.refillEffect::after {
+    content: '';
+    position: absolute;
+    left: -5%;
+    top: 105%;
+    width: 110%;
+    height: 110%;
+    background-color: var(--text);
+    transition: 0.5s ease;
+    z-index: 0;
+}
+
+.call-to-action-container.refillEffect:hover::after {
+    top: -5%;
+}
+
+.call-to-action-container.refillEffect:hover .call-to-action-text {
+    color: var(--background);
+}

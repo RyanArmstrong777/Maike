@@ -1,0 +1,76 @@
+.audio-sample-container {
+    padding: var(--spacing-xs);
+    width: 100%;
+    gap: var(--spacing-sm);
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.audio-sample-data-item {
+    width: var(--spacing-xl);
+    aspect-ratio: 1;
+    border-radius: var(--spacing-xs);
+    background-color: var(--card);
+    cursor: pointer;
+}
+
+.audio-sample-tags-container {
+    flex-direction: row;
+    gap: var(--spacing-xs);
+    width: auto;
+}
+
+.audio-sample-data-item.field {
+    background-color: var(--background);
+    aspect-ratio: unset;
+    padding: 0 var(--spacing-xs);
+    width: fit-content;
+}
+
+.audio-sample-data-item .icon {
+    color: var(--text);
+}
+
+.audio-sample-data-item.hover-effect:hover {
+    background-color: var(--card);
+}
+
+.audio-sample-data-item:hover .hover-text,
+.tags-wrapper:hover .hover-text {
+    color: var(--text) !important;
+}
+
+.sample-text-container > h4,
+.audio-sample-data-item > h5 {
+    white-space: nowrap;
+}
+
+@media(max-width: 1100px) {
+    .audio-sample-container .downloads {
+        display: none;
+    }
+}
+
+@media(max-width: 1050px) {
+    .audio-sample-container .artist {
+        display: none;
+    }
+}
+
+@media(max-width: 1000px) {
+    .audio-sample-container .duration {
+        display: none;
+    }
+}
+
+@media(max-width: 950px) {
+    .audio-sample-container .note {
+        display: none;
+    }
+}
+
+@media(max-width: 900px) {
+    .audio-sample-container .bpm {
+        display: none;
+    }
+}

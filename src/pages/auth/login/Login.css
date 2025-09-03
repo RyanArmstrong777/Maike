@@ -1,0 +1,25 @@
+.header-container {
+    gap: var(--spacing-lg);
+    padding-top: var(--spacing-xl);
+}
+
+.inputs-container {
+    position: relative;
+    margin: var(--spacing-md) auto 0;
+    width: 100%;
+    max-width: 400px;
+    padding: 0 var(--spacing-xl);
+    gap: var(--spacing-sm);
+}
+
+.seperator::before {
+    content: '';
+    width: calc(100% - var(--spacing-xl));
+    height: 1px;
+    background-color: var(--border);
+    position: absolute;
+}
+
+#forgot-password {
+    align-items: left !important;
+}

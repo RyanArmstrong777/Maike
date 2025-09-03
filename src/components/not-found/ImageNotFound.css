@@ -1,0 +1,7 @@
+.image-not-found-cover {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: var(--spacing-sm);
+    gap: var(--spacing-sm);
+    background-color: var(--background);
+}

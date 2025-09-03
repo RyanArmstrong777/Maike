@@ -1,0 +1,25 @@
+#pricing-container {
+    padding: 0 var(--spacing-sm) var(--spacing-lg);
+    gap: var(--spacing-lg);
+    justify-content: center;
+    align-items: center;
+}
+
+#subscription-freq-container {
+    flex-direction: row;
+    width: max-content;
+    gap: var(--spacing-xl)
+}
+
+#subscription-options-container {
+    flex-direction: row;
+    gap: var(--spacing-lg);
+    width: 100%;
+    height: fit-content;
+}
+
+@media(max-width: 800px) {
+    #subscription-options-container {
+        flex-direction: column;
+    }
+}

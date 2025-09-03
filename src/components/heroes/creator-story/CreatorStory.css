@@ -1,0 +1,27 @@
+.creator-story-container {
+    padding: var(--spacing-sm);
+    gap: var(--spacing-lg);
+    width: 80vw;
+    max-width: 300px;
+}
+
+.creator-image-container {
+    padding: var(--spacing-xs);
+    justify-content: center;
+    align-items: center;
+}
+
+.creator-image-wrapper {
+    background-color: var(--card);
+    border-radius: 50%;
+    aspect-ratio: 1;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-xl);
+    cursor: pointer;
+}
+
+.creator-metadata-container {
+    gap: var(--spacing-sm);
+    text-align: center;
+}
